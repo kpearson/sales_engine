@@ -1,6 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/kpearson/sales_engine.png?label=ready&title=Ready)](https://waffle.io/kpearson/sales_engine)
 # Sales Engine
 
+by Kit Pearson & Andrew Overby in cohort 1410
+
 (insert project completion goals for first check-in here)
 
 (insert project completion goals for second check-in here)
