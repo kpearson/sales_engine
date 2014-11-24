@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/kpearson/sales_engine.png?label=ready&title=Ready)](https://waffle.io/kpearson/sales_engine)
 # Sales Engine
 
 (insert project completion goals for first check-in here)
