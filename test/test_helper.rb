@@ -9,4 +9,6 @@ require 'minitest/autorun'
 require 'minitest/mock'
 require 'minitest/pride'
 
-# require 'pry'
+require_relative '../lib/sales_engine'
+
+ require 'pry'
