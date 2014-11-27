@@ -1,4 +1,5 @@
 require_relative 'customer_repository'
+require_relative 'item_repository'
 
 class SalesEngine
   def startup(data=nil)
@@ -6,7 +7,7 @@ class SalesEngine
   end
 
   def load(data=nil)
-    @customers     = CustomerRepository.new(data=prod_data[:customers_data])
+    # @customers     = CustomerRepository.new(data=prod_data[:customers_data])
     @items         = ItemRepository.new(data=prod_data[:items_data])
     # @merchants     = Merchant.new(data=prod_data[:merchant_data])
     # @invoice_items = InvoiceItem.new(data=prod_data[:invoice_items_data])
@@ -16,6 +17,10 @@ class SalesEngine
 
   def customer_repository
     @customers
+  end
+
+  def item_repository
+    @items
   end
 
   def get_file_path(file_name)

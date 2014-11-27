@@ -2,17 +2,15 @@ require 'csv'
 require_relative 'customer'
 
 class CustomerRepository
-
   attr_reader :customers
+
   def initialize(file_name)
     @customers = customer_data(file_name)
   end
 
   def customer_data(file_path)
-    # file_path = get_file_path(file_name)
     csv = CSV.open("#{file_path}",
-                  headers: true, header_converters: :symbol)
-    # @headers = csv.first
+          headers: true, header_converters: :symbol)
     csv.map do |row|
       Customer.new(row)
     end
@@ -43,8 +41,9 @@ class CustomerRepository
 
 end
 
+  # file_path = get_file_path(file_name)
 
-
+  # @headers = csv.first
 
   # def get_file_path(file_name)
   #   path_to_file = File.expand_path(data="../data", __dir__)
