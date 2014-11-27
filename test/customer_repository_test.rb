@@ -3,7 +3,7 @@ require_relative '../lib/customer_repository'
 
 class CustomerRepositoryTest < Minitest::Test
   def setup
-    @test_data = "./test/fixtures/customers.csv"
+    @test_data           = "./test/fixtures/customers.csv"
     @customer_repository = CustomerRepository.new(@test_data)
   end
 

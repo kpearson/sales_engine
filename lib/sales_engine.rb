@@ -1,22 +1,26 @@
 require_relative 'customer_repository'
+require_relative 'item_repository'
 
 class SalesEngine
-  def startup(data=dataish)
+  def startup(data=nil)
     load(data)
   end
 
-  def load(data)
-    customers = CustomerRepository.new(data)
-    @customers = customers
-    # Items.new("../data/fill_in.csv")
-    # Merchant.new("../data/fill_in.csv")
-    # InvoiceItem.new("../data/fill_in.csv")
-    # Invoice.new("../data/fill_in.csv")
-    # Transaction.new("../data/fill_in.csv")
+  def load(data=nil)
+    # @customers     = CustomerRepository.new(data=prod_data[:customers_data])
+    @items         = ItemRepository.new(data=prod_data[:items_data])
+    # @merchants     = Merchant.new(data=prod_data[:merchant_data])
+    # @invoice_items = InvoiceItem.new(data=prod_data[:invoice_items_data])
+    # @invoice       = Invoice.new(data=prod_data[:invoice_data])
+    # @transactions  = Transaction.new(data=prod_data[:transactions_data])
   end
 
   def customer_repository
     @customers
+  end
+
+  def item_repository
+    @items
   end
 
   def get_file_path(file_name)
@@ -24,7 +28,14 @@ class SalesEngine
     file_path = File.join(path_to_file, file_name)
   end
 
-  def dataish
-    customers_data = "data/customers.csv"
+  def prod_data
+    {
+    :customers_data    => "data/customers.csv",
+    :items_data        => "data/items.csv",
+    :merchant_data     => "data/merchants.csv",
+    :invoice_item_data => "data/invoice_items.csv",
+    :invoice_data      => "data/invoices.csv",
+    :transaction_data  => "data/transactions.csv"
+    }
   end
 end
