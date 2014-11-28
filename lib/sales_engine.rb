@@ -15,19 +15,7 @@ class SalesEngine
     # @invoice       = Invoice.new(data[:invoice_data])
     # @transactions  = Transaction.new(data[:transactions_data])
   end
-  attr_reader :customers, :items
-
-  # def customers_repository
-  #   @customers
-  # end
-
-  # def item_repository
-  #   @items
-  # end
-
-  def invoice_items
-    @invoice_items
-  end
+  attr_reader :customers, :items, :invoice_items
 
   def get_file_path(file_name)
     path_to_file = File.expand_path("../data", __dir__)

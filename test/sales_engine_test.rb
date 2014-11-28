@@ -24,6 +24,10 @@ class SalesEngineTest < Minitest::Test
     assert @engine.invoice_items
   end
 
+  def method_name
+
+  end
+
   def fixture_data
     {
     :customers_data     => "./test/fixtures/customers.csv",
