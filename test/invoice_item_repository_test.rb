@@ -9,6 +9,7 @@ class InvoiceItemRepositoryTest < Minitest::Test
 
   def test_invoice_items_repo_can_load
     assert @invoice_item_repository
+    binding.pry
   end
 
   def test_invoice_items_all

@@ -16,6 +16,10 @@ class CustomerRepository
     end
   end
 
+  def inspect
+    "#<\#{self.class} \#{@customers.size} rows>"
+  end
+
   def all
     customers
   end
