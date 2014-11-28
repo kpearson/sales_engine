@@ -15,7 +15,7 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal 15, @item_repository.all.count
   end
 
-  def test_find_by_id
+  def test_items_find_by_id
     item_1 = @item_repository.find_by_id("1")
     assert_equal "1", item_1.id
     assert_equal "Item Qui Esse", item_1.name
