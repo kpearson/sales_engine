@@ -27,7 +27,7 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal "3", item_3.id
   end
 
-  def test_find_by_discription
+  def test_find_by_description
     description = "Fuga assumenda occaecati hic dolorem tenetur dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur illo. Necessitatibus quis quo velit sed repellendus ut amet."
     item_7 = @item_repository.find_by_description(description)
     assert_equal description, item_7.description

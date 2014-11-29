@@ -16,3 +16,4 @@ class ItemTest < Minitest::Test
     assert item.name
   end
 end
+
