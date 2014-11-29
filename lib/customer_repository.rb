@@ -41,14 +41,4 @@ class CustomerRepository
       customer.first_name == first_name
     end
   end
-
-
 end
-
-  # file_path = get_file_path(file_name)
-
-  # def get_file_path(file_name)
-  #   path_to_file = File.expand_path(data="../data", __dir__)
-  #   file_path = File.join(path_to_file, file_name)
-  #   file_name
-  # end

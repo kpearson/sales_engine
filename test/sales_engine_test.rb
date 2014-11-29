@@ -24,18 +24,19 @@ class SalesEngineTest < Minitest::Test
     assert @engine.invoice_items
   end
 
-  def method_name
-
+  def test_engine_can_create_merchants_repo
+    @engine.startup(fixture_data)
+    assert @engine.merchants
   end
 
   def fixture_data
     {
-    :customers_data     => "./test/fixtures/customers.csv",
     :items_data         => "./test/fixtures/items.csv",
-    :merchant_data      => "./test/fixtures/merchants.csv",
-    :invoice_items_data => "./test/fixtures/invoice_items.csv",
     :invoice_data       => "./test/fixtures/invoices.csv",
-    :transaction_data   => "./test/fixtures/transactions.csv"
+    :merchant_data      => "./test/fixtures/merchants.csv",
+    :customers_data     => "./test/fixtures/customers.csv",
+    :transaction_data   => "./test/fixtures/transactions.csv",
+    :invoice_items_data => "./test/fixtures/invoice_items.csv"
     }
   end
 end

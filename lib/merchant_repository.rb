@@ -13,8 +13,12 @@ class MerchantRepository
         headers: true, header_converters: :symbol)
     csv.map do |row|
     Merchant.new(row)
+    end
   end
-end
+
+  def inspect
+    "#<\#{self.class} \#{@merchants.size} rows>"
+  end
 
   def all
     merchant
@@ -33,8 +37,8 @@ end
   end
 
   def find_by_description(description)
-      merchant.find do |merchant|
-        merchant.description = description
-      end
+    merchant.find do |merchant|
+      merchant.description = description
+    end
   end
-#check this is correct: are these the appropriate methods?
+end
