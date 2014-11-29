@@ -1,21 +1,24 @@
 require_relative 'test_helper'
-require_relative '../lib/item'
+require_relative '../lib/transaction'
 
 class TransactionTest < Minitest::Test
+  def test_transactions_has_correct_attributes
     data = {
-            :id,
-            :invoice:id,
-            :credit_card_number,
-            :credit_card_expiration_date,
-            :result,
-            :created_at,
-            :updated_at
+            :id => "1",
+            :invoice_id => "1",
+            :credit_card_number => "4654405418249632",
+            :credit_card_expiration_date => "2014-03-30",
+            :result => "success",
+            :created_at => "2012-03-27 14:54:09 UTC",
+            :updated_at => "2012-03-27 14:54:09 UTC"
             }
-    def initialize(data)
-      @id         = data[:id]
-      @first_name = data[:first_name]
-      @last_name  = data[:last_name]
-      @created_at = data[:created_at]
-      @updated_at = data[:updated_at]
-    end
+     transaction = Transaction.new(data)
+     assert transaction.id
+     assert transaction.invoice_id
+     assert transaction.credit_card_number
+     assert transaction.credit_card_expiration_date
+     assert transaction.result
+     assert transaction.created_at
+     assert transaction.updated_at
+   end
 end

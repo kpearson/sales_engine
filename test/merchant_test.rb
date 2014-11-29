@@ -11,7 +11,9 @@ class MerchantTest < Minitest::Test
             updated_at: "2012-03-27 14:53:59 UTC",
             }
     merchant = Merchant.new(data)
-    assert_equal "Schroeder-Jerde", merchant.name
+    assert merchant.id 
+    assert merchant.name
+    assert merchant.created_at
+    assert merchant.updated_at
   end
-
 end
