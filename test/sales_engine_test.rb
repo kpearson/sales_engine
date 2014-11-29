@@ -6,28 +6,36 @@ class SalesEngineTest < Minitest::Test
   end
 
   def test_sales_engine_startup
-    assert @engine.startup
+    assert @engine.startup(fixture_data)
   end
 
-  def test_sales_engine_sees_customers
-    skip
-    @engine.startup(fixture_data[:customers_data])
-    assert @engine.customer_repository
+  def test_sales_engine_create_customers
+    @engine.startup(fixture_data)
+    assert @engine.customers
   end
 
   def test_engine_can_create_items_repo
-    @engine.startup(fixture_data[:items_data])
-    assert @engine.item_repository
+    @engine.startup(fixture_data)
+    assert @engine.items
+  end
+
+  def test_engine_can_create_incvoice_items_repo
+    @engine.startup(fixture_data)
+    assert @engine.invoice_items
+  end
+
+  def method_name
+
   end
 
   def fixture_data
     {
-    :customers_data    => "./test/fixtures/customers.csv",
-    :items_data        => "./test/fixtures/items.csv",
-    :merchant_data     => "./test/fixtures/merchants.csv",
-    :invoice_item_data => "./test/fixtures/invoice_items.csv",
-    :invoice_data      => "./test/fixtures/invoices.csv",
-    :transaction_data  => "./test/fixtures/transactions.csv"
+    :customers_data     => "./test/fixtures/customers.csv",
+    :items_data         => "./test/fixtures/items.csv",
+    :merchant_data      => "./test/fixtures/merchants.csv",
+    :invoice_items_data => "./test/fixtures/invoice_items.csv",
+    :invoice_data       => "./test/fixtures/invoices.csv",
+    :transaction_data   => "./test/fixtures/transactions.csv"
     }
   end
 end

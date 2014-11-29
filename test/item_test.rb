@@ -2,7 +2,6 @@ require_relative 'test_helper'
 require_relative '../lib/item'
 
 class ItemTest < Minitest::Test
-
   def test_items_have_the_correct_attributes
     data = {
             id: "1",
@@ -14,7 +13,6 @@ class ItemTest < Minitest::Test
             updated_at: "2012-03-27 14:54:09 UTC",
             }
     item = Item.new(data)
-    assert_equal "Leatherman", item.name
+    assert item.name
   end
-
 end
