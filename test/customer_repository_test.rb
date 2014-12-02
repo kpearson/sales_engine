@@ -5,7 +5,7 @@ class CustomerRepositoryTest < Minitest::Test
   include Fixture
   def setup
     engine = SalesEngine.new
-    engine.startup(Fixture::DATA,)
+    engine.startup(Fixture::DATA)
     @customer_repository = engine.customers_repository
   end
 
@@ -39,16 +39,5 @@ class CustomerRepositoryTest < Minitest::Test
   def test_finds_all_customer_invoices
     customer_1 = @customer_repository.find_by_id("1")
     assert_equal 8, customer_1.invoices.count
-  end
-
-  def Fixture::DATA
-    {
-    :items_data         => "./test/fixtures/items.csv",
-    :invoices_data      => "./test/fixtures/invoices.csv",
-    :customers_data     => "./test/fixtures/customers.csv",
-    :merchants_data     => "./test/fixtures/merchants.csv",
-    :transactions_data  => "./test/fixtures/transactions.csv",
-    :invoice_items_data => "./test/fixtures/invoice_items.csv"
-    }
   end
 end

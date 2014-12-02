@@ -37,8 +37,8 @@ class InvoicesRepository
     end
   end
 
-  def find_by_merchant_id(merchant_id)
-    invoices.find do |invoice|
+  def find_all_by_merchant_id(merchant_id)
+    invoices.find_all do |invoice|
       invoice.merchant_id == merchant_id
     end
   end

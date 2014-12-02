@@ -24,9 +24,9 @@ class InvoiceRepositoryTest < Minitest::Test
     assert_equal 8, invoices.count
   end
 
-  def test_invoice_find_by_merchant_id
-    invoice = @invoices.find_by_merchant_id("26")
-    assert_equal "26", invoice.merchant_id
+  def test_invoice_find_all_by_merchant_id
+    invoice = @invoices.find_all_by_merchant_id("27")
+    assert_equal 2, invoice.count
   end
 
   def test_invoice_find_all_by_status

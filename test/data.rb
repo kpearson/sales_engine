@@ -1,6 +1,5 @@
 module Fixture
-  DATA =
-    {
+  DATA = {
     :items_data         => "./test/fixtures/items.csv",
     :invoices_data      => "./test/fixtures/invoices.csv",
     :customers_data     => "./test/fixtures/customers.csv",

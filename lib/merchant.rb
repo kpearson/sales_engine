@@ -11,4 +11,12 @@ class Merchant
     @updated_at = data[:updated_at]
     @repository = repository
   end
+
+  def items
+    @repository.items(id)
+  end
+
+  def invoices
+    @repository.invoices(id)
+  end
 end
