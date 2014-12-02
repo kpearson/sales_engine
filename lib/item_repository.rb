@@ -5,7 +5,8 @@ class ItemRepository
   attr_reader :items
 
   def initialize(file_name)
-    @items = item_data(file_name)
+    @items     = item_data(file_name)
+    # @engine    = parent
   end
 
   def item_data(file_path)

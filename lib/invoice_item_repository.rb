@@ -6,6 +6,7 @@ class InvoiceItemRepository
 
   def initialize(file_name)
     @invoice_items = invoice_item_data(file_name)
+    # @engine        = parent
   end
 
   def invoice_item_data(file_name)

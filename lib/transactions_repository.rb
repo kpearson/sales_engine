@@ -6,6 +6,7 @@ class TransactionsRepository
 
   def initialize(file_name)
     @transactions = transaction_data(file_name)
+    # @engine       = parent
   end
 
   def transaction_data(file_name)

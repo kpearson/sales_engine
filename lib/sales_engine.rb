@@ -12,17 +12,17 @@ class SalesEngine
 
   def load(data)
     @items         = ItemRepository.new(data[:items_data])
-    @invoice       = InvoicesRepository.new(data[:invoice_data])
-    @merchants     = MerchantRepository.new(data[:merchant_data])
-    @customers     = CustomerRepository.new(data[:customers_data])
-    @transactions  = TransactionsRepository.new(data[:transaction_data])
+    @invoices      = InvoicesRepository.new(data[:invoices_data])
+    @merchants     = MerchantRepository.new(data[:merchants_data])
+    @customers     = CustomerRepository.new(data[:customers_data], self)
+    @transactions  = TransactionsRepository.new(data[:transactions_data])
     @invoice_items = InvoiceItemRepository.new(data[:invoice_items_data])
   end
   attr_reader :items,
-              :invoice,
+              :invoices,
               :merchants,
               :customers,
-              :transaction,
+              :transactions,
               :invoice_items
 
   def get_file_path(file_name)
@@ -30,17 +30,17 @@ class SalesEngine
     file_path = File.join(path_to_file, file_name)
   end
 
-  def invoices
-
+  def customer_invoices(id)
+   invoices.find_all_by_customer_id(id)
   end
 
   def prod_data
     {
     :items_data         => "data/items.csv",
-    :invoice_data       => "data/invoices.csv",
+    :invoices_data      => "data/invoices.csv",
     :customers_data     => "data/customers.csv",
-    :merchant_data      => "data/merchants.csv",
-    :transaction_data   => "data/transactions.csv",
+    :merchants_data     => "data/merchants.csv",
+    :transactions_data  => "data/transactions.csv",
     :invoice_items_data => "data/invoice_items.csv"
     }
   end

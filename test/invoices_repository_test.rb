@@ -16,9 +16,9 @@ class InvoiceRepositoryTest < Minitest::Test
     assert_equal "1", invoice.id
   end
 
-  def test_invoice_find_by_customer_id
-    invoice = @invoices.find_by_customer_id("1")
-    assert_equal "1", invoice.customer_id
+  def test_invoice_find_all_by_customer_id
+    invoices = @invoices.find_all_by_customer_id("1")
+    assert_equal 8, invoices.count
   end
 
   def test_invoice_find_by_merchant_id

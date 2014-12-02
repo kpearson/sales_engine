@@ -4,24 +4,30 @@ require_relative 'customer'
 class CustomerRepository
   attr_reader :customers
 
-  def initialize(file_name)
+  def initialize(file_name, parent)
     @customers = customer_data(file_name)
+    @engine    = parent
   end
 
   def customer_data(file_path)
+    # my_ref = self
     csv = CSV.open("#{file_path}",
           headers: true, header_converters: :symbol)
     csv.map do |row|
-      Customer.new(row)
+      Customer.new(row, self)
     end
   end
 
-  def inspect
-    "#<\#{self.class} \#{@customers.size} rows>"
-  end
+  # def inspect
+  #   "#<\#{self.class} \#{@customers.size} rows>"
+  # end
 
   def all
     customers
+  end
+
+  def invoices(customer_id)
+    @engine.customer_invoices(customer_id)
   end
 
   def find_by_id(id)

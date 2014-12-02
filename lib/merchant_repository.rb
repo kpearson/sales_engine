@@ -6,6 +6,7 @@ class MerchantRepository
 
   def initialize(file_name)
     @merchants = merchant_data(file_name)
+    # @engine    = parent
   end
 
   def merchant_data(file_path)

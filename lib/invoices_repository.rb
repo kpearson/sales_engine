@@ -6,6 +6,7 @@ class InvoicesRepository
 
   def initialize(file_name)
     @invoices = invoices_data(file_name)
+    # @engine    = parent
   end
 
   def invoices_data(file_name)
@@ -16,9 +17,9 @@ class InvoicesRepository
     end
   end
 
-  def inspect
-    "#<\#{self.class} \#{@items.size} rows>"
-  end
+  # def inspect
+  #   "#<\#{self.class} \#{@items.size} rows>"
+  # end
 
   def all
     invoices
@@ -30,8 +31,8 @@ class InvoicesRepository
     end
   end
 
-  def find_by_customer_id(customer_id)
-    invoices.find do |invoice|
+  def find_all_by_customer_id(customer_id)
+    invoices.find_all do |invoice|
       invoice.customer_id == customer_id
     end
   end
