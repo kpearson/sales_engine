@@ -4,20 +4,21 @@ require_relative 'invoice_item'
 class InvoiceItemRepository
   attr_reader :invoice_items
 
-  def initialize(file_name)
+  def initialize(file_name, parent)
     @invoice_items = invoice_item_data(file_name)
+    @engine        = parent
   end
 
   def invoice_item_data(file_name)
     csv = CSV.open("#{file_name}",
           headers: true, header_converters: :symbol)
     csv.map do |row|
-      InvoiceItem.new(row)
+      InvoiceItem.new(row, self)
     end
   end
 
   def inspect
-    "#<\#{self.class} \#{@invoice_items.size} rows>"
+    "<#{self.class} #{@invoice_items.size} rows>"
   end
 
   def all

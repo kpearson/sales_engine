@@ -4,20 +4,21 @@ require_relative 'transaction'
 class TransactionsRepository
   attr_reader :transactions
 
-  def initialize(file_name)
+  def initialize(file_name, parent)
     @transactions = transaction_data(file_name)
+    @engine       = parent
   end
 
   def transaction_data(file_name)
     csv = CSV.open("#{file_name}",
           headers: true, header_converters: :symbol)
     csv.map do |row|
-      Transaction.new(row)
+      Transaction.new(row, self)
     end
   end
 
   def inspect
-    "#<\#{self.class} \#{@items.size} rows>"
+    "<#{self.class} #{@items.size} rows>"
   end
 
   def all

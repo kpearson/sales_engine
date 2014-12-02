@@ -12,7 +12,7 @@ class ItemTest < Minitest::Test
       created_at: "2012-03-27 14:54:09 UTC",
       updated_at: "2012-03-27 14:54:09 UTC",
     }
-    item = Item.new(data)
+    item = Item.new(data, nil)
     assert item.name
   end
 end

@@ -2,39 +2,46 @@ require 'csv'
 require_relative 'merchant'
 
 class MerchantRepository
-  attr_reader :merchant
+  attr_reader :merchants
 
-  def initialize(file_name)
+  def initialize(file_name, parent)
     @merchants = merchant_data(file_name)
+    @engine    = parent
   end
 
   def merchant_data(file_path)
     csv = CSV.open("#{file_path}",
         headers: true, header_converters: :symbol)
     csv.map do |row|
-    Merchant.new(row)
+    Merchant.new(row, self)
+    end
   end
-end
+
+  def inspect
+    "<#{self.class} #{@merchants.size} rows>"
+  end
 
   def all
-    merchant
+    merchants
   end
 
   def find_by_id(id)
-    merchant.find do |merchant|
-      merchant.id == merchant
+    merchants.find do |merchant|
+      merchant.id == id
     end
   end
 
   def find_by_name(name)
-    merchant.find do |merchant|
+    merchants.find do |merchant|
       merchant.name == name
     end
   end
 
-  def find_by_description(description)
-      merchant.find do |merchant|
-        merchant.description = description
-      end
+  def items(merchant_id)
+    @engine.merchant_items(merchant_id)
   end
-#check this is correct: are these the appropriate methods?
+
+  def invoices(merchant_id)
+    @engine.merchant_invoices(merchant_id)
+  end
+end

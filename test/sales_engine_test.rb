@@ -1,41 +1,37 @@
 require_relative 'test_helper'
 
 class SalesEngineTest < Minitest::Test
+  include Fixture
   def setup
     @engine = SalesEngine.new
   end
 
   def test_sales_engine_startup
-    assert @engine.startup(fixture_data)
+    assert @engine.startup(Fixture::DATA)
   end
 
   def test_sales_engine_create_customers
-    @engine.startup(fixture_data)
-    assert @engine.customers
+    @engine.startup(Fixture::DATA)
+    assert @engine.customers_repository
   end
 
   def test_engine_can_create_items_repo
-    @engine.startup(fixture_data)
-    assert @engine.items
+    @engine.startup(Fixture::DATA)
+    assert @engine.items_repository
   end
 
   def test_engine_can_create_incvoice_items_repo
-    @engine.startup(fixture_data)
-    assert @engine.invoice_items
+    @engine.startup(Fixture::DATA)
+    assert @engine.invoice_items_repository
   end
 
-  def method_name
-
+  def test_engine_can_create_merchants_repo
+    @engine.startup(Fixture::DATA)
+    assert @engine.merchants_repository
   end
 
-  def fixture_data
-    {
-    :customers_data     => "./test/fixtures/customers.csv",
-    :items_data         => "./test/fixtures/items.csv",
-    :merchant_data      => "./test/fixtures/merchants.csv",
-    :invoice_items_data => "./test/fixtures/invoice_items.csv",
-    :invoice_data       => "./test/fixtures/invoices.csv",
-    :transaction_data   => "./test/fixtures/transactions.csv"
-    }
+  def test_engine_can_create_invoice_repo
+    @engine.startup(Fixture::DATA)
+    assert @engine.invoices_repository
   end
 end

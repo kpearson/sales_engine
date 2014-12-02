@@ -1,0 +1,1548 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"customer",
+				"customer_repository"
+			],
+			[
+				"trans",
+				"transaction"
+			],
+			[
+				"tras",
+				"trasactions_repository"
+			],
+			[
+				"invoice_",
+				"invoice_items"
+			],
+			[
+				"custom",
+				"customer_repository"
+			],
+			[
+				"fixture",
+				"Fixture::DATA"
+			],
+			[
+				"invoice",
+				"invoice_item_repository"
+			],
+			[
+				"in",
+				"invoice_items_repository"
+			],
+			[
+				"re",
+				"req	require \"..\""
+			],
+			[
+				"req",
+				"req	require \"..\""
+			],
+			[
+				"item",
+				"item_repository"
+			],
+			[
+				"ite",
+				"items_data"
+			],
+			[
+				"fix",
+				"Fixture::DATA"
+			],
+			[
+				"seq",
+				"sequence2"
+			],
+			[
+				"quit",
+				"quit_command"
+			],
+			[
+				"di",
+				"difficulty"
+			],
+			[
+				"mess",
+				"message"
+			],
+			[
+				"se",
+				"SequenceGenerator"
+			],
+			[
+				"comman",
+				"command_prosess"
+			],
+			[
+				"messa",
+				"Messages"
+			],
+			[
+				"to",
+				"to_short"
+			],
+			[
+				"cla",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"is",
+				"is_dvisable_by_four"
+			],
+			[
+				"is_",
+				"is_dvisable_by_100_and_400"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"def",
+				"def	def … end"
+			],
+			[
+				"u",
+				"until	until ... end"
+			],
+			[
+				"e",
+				"eas-	each_slice(..) { |group| .. }"
+			],
+			[
+				"d",
+				"dir	directory()"
+			],
+			[
+				"cl",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"c",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"entry",
+				"entry_hash"
+			],
+			[
+				"num",
+				"numbers"
+			],
+			[
+				"current",
+				"current_node"
+			],
+			[
+				"new",
+				"new_node"
+			],
+			[
+				"zip",
+				"zip_codes"
+			],
+			[
+				"Per",
+				"Perseus"
+			],
+			[
+				"la",
+				"laying"
+			],
+			[
+				"suga",
+				"sugar_level"
+			],
+			[
+				"br",
+				"be_true"
+			],
+			[
+				"att",
+				"attr_reader"
+			],
+			[
+				"pla",
+				"players"
+			],
+			[
+				"pl",
+				"player_3"
+			],
+			[
+				"player",
+				"player_1"
+			],
+			[
+				"ca",
+				"capitalize"
+			],
+			[
+				"na",
+				"name_3"
+			],
+			[
+				"ana",
+				"anagrams"
+			],
+			[
+				"zero",
+				"zero_maker"
+			],
+			[
+				"year",
+				"year_end"
+			],
+			[
+				"fir",
+				"first_bigger_idx"
+			],
+			[
+				"firs",
+				"first_bigger"
+			],
+			[
+				"name",
+				"name_store"
+			],
+			[
+				"ro",
+				"robot2"
+			],
+			[
+				"dat",
+				"date_to_seconds"
+			],
+			[
+				"lo",
+				"long_words"
+			],
+			[
+				"arg",
+				"argument"
+			],
+			[
+				"uniq",
+				"uniq  (function)"
+			],
+			[
+				"v",
+				"var2"
+			],
+			[
+				"var",
+				"var1"
+			],
+			[
+				"be",
+				"be_nil"
+			],
+			[
+				"recently_",
+				"recently_redeemed_reservations"
+			],
+			[
+				"res",
+				"restaurants_with_redeemed_reservations"
+			],
+			[
+				"users",
+				"users_arr"
+			],
+			[
+				"meal",
+				"meal_donation"
+			],
+			[
+				"ra",
+				"random_with_logos_and_meals"
+			],
+			[
+				"red",
+				"redemption_code"
+			],
+			[
+				"restaurants",
+				"restaurant_user"
+			],
+			[
+				"self_",
+				"self_redemption"
+			],
+			[
+				"redem",
+				"redemptions"
+			],
+			[
+				"total",
+				"total_meals"
+			],
+			[
+				"other_",
+				"other_redemption"
+			],
+			[
+				"redemption",
+				"redemption_code"
+			],
+			[
+				"with",
+				"with_most_meals"
+			],
+			[
+				"content",
+				"content_body"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"spo",
+				"sponsor_total"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"min",
+				"min_max_price"
+			],
+			[
+				"sponsorable",
+				"sponsorable_02"
+			],
+			[
+				"sponsora",
+				"sponsorable_01"
+			],
+			[
+				"ass",
+				"assert_equal"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"super",
+				"superuser"
+			],
+			[
+				"cat",
+				"category"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/customer.rb",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/sales_engine.rb",
+			"settings":
+			{
+				"buffer_size": 1475,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/customer_repository_test.rb",
+			"settings":
+			{
+				"buffer_size": 1121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/customer_repository.rb",
+			"settings":
+			{
+				"buffer_size": 897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/sales_engine_test.rb",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/customer_test.rb",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sales_engine.sublime-project",
+			"settings":
+			{
+				"buffer_size": 83,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 352.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"anf",
+				"ANF: New File"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"nf",
+				"ANF: New File"
+			],
+			[
+				"see",
+				"Seeing Is Believing: Evaluate"
+			],
+			[
+				"seee",
+				"Seeing Is Believing: Evaluate"
+			],
+			[
+				"rf",
+				"ANF: Rename File"
+			],
+			[
+				"",
+				"RubyTest: Run All Ruby Tests"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"plug",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pce",
+				"Package Control: Enable Package"
+			],
+			[
+				"pae",
+				"Package Control: Enable Package"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pc",
+				"Package Control: Install Package"
+			],
+			[
+				"ack",
+				"Package Control: Install Package"
+			],
+			[
+				"floobits - o",
+				"Floobits - Open Workspace in your Browser"
+			]
+		],
+		"width": 590.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Kit/turing/projects/sales_engine/lib/sales_engine.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/customer_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/invoices.csv",
+		"/Users/Kit/turing/projects/sales_engine/lib/customer.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/item_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/invoices_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/invoices_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/item_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/merchant_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/transactions_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/invoice_item_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/data/customers.csv",
+		"/Users/Kit/turing/projects/sales_engine/test/test_helper.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/merchants.csv",
+		"/Users/Kit/turing/projects/sales_engine/test/customer_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/transaction_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/asdkljfas",
+		"/Users/Kit/turing/projects/sales_engine/lkdjfl;kasdj",
+		"/Users/Kit/turing/projects/sales_engine/skdjafl;kj",
+		"/Users/Kit/turing/projects/sales_engine/test/transactions_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/item.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/transactions.csv",
+		"/Users/Kit/turing/projects/sales_engine/lib/data_handler.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/transaction.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/item_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/transactions_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/transations_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/invoice_item.rb",
+		"/Users/Kit/turing/projects/sales_engine/Gemfile",
+		"/Users/Kit/turing/projects/sales_engine/test/sales_engine_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/invoice_item_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/invoice_item_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/invoice_items.csv",
+		"/Users/Kit/turing/projects/sales_engine/test/customer_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/data/invoice_items.csv",
+		"/Users/Kit/turing/projects/sales_engine/invoive_item_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/csv_parser_test.rb",
+		"/Users/Kit/turing/exercises/daily_exercise/enum_methods.md",
+		"/Users/Kit/turing/exercises/daily_exercise/Array_methods.md",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/customers.csv",
+		"/Users/Kit/turing/projects/sales_engine/data/invoices.csv",
+		"/Users/Kit/turing/projects/sales_engine/data/items.csv",
+		"/Users/Kit/turing/projects/sales_engine/data/merchants.csv",
+		"/Users/Kit/turing/projects/sales_engine/data/transactions.csv",
+		"/Users/Kit/turing/projects/sales_engine/test/fixtures/items.csv",
+		"/Users/Kit/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/lib/build_file.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/lib/model.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/test/model_test.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/test/test_helper.rb",
+		"/Users/Kit/turing/exercises/daily_exercise/methods.md",
+		"/Users/Kit/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/lib/cli.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/lib/event_queue.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/test/cli_test.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/test/event_queue_test.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/lib/help.rb",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/data/event_attendees.csv",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/data/test.csv",
+		"/Users/Kit/turing/projects/event_reporter/event_reporter/bin/event_reporter.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/lib/challenge4.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/lib/challenge01.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/lib/challenge02.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/challenges/03.md",
+		"/Users/Kit/turing/exercises/enumerable-challenges/test/challenge02_test.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/test/challenge03_test.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/test/challenge4_test.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/test/challenge01_test.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/lib/challenge03.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/RakeFile",
+		"/Users/Kit/turing/exercises/enumerable-challenges/README.md",
+		"/Users/Kit/turing/exercises/enumerable-challenges/challenges/02.md",
+		"/Users/Kit/turing/exercises/enumerable-challenges/challenge01_test.rb",
+		"/Users/Kit/turing/exercises/enumerable-challenges/lib/challenges.rb",
+		"/Users/Kit/Library/Application Support/Sublime Text 2/Packages/rake",
+		"/Users/Kit/turing/projects/mastermind/lib/cli.rb",
+		"/Users/Kit/turing/projects/event_reporter/test.rb",
+		"/Users/Kit/turing/projects/mastermind/test/cli_test.rb",
+		"/Users/Kit/turing/projects/mastermind/bin/mastermind",
+		"/Users/Kit/turing/projects/mastermind/lib/sequence_generator.rb",
+		"/Users/Kit/turing/projects/mastermind/test/test_helper.rb",
+		"/Users/Kit/turing/projects/mastermind/lib/player.rb",
+		"/Users/Kit/turing/projects/mastermind/lib/mastermind.rb",
+		"/Users/Kit/turing/projects/mastermind/README.txt",
+		"/Users/Kit/rails_projects/exercism.io/ruby/grains/README.md",
+		"/Users/Kit/rails_projects/exercism.io/ruby/grains/grains_test.rb",
+		"/Users/Kit/rails_projects/exercism.io/ruby/grains/grains.rb",
+		"/Users/Kit/carePackage.md",
+		"/Users/Kit/rails_projects/exercism.io/ruby/leap/year.rb",
+		"/Users/Kit/rails_projects/exercism.io/ruby/leap/leap_test.rb",
+		"/Users/Kit/rails_projects/exercism.io/ruby/leap/README.md",
+		"/Users/Kit/rails_projects/exercism.io/ruby/year.rb",
+		"/Users/Kit/rails_projects/exercism.io/ruby/leap/leap.rb",
+		"/Users/Kit/turing/exercises/ruby-object-model/fizz_buzz.js",
+		"/Users/Kit/turing/exercises/ruby-object-model/4-method_lookup.rb",
+		"/Users/Kit/turing/ideabox/ideabox/Rakefile",
+		"/Users/Kit/rails_projects/the_directory/Gemfile",
+		"/Users/Kit/turing/data_structures_and_algorithms/README.markdown",
+		"/Users/Kit/turing/enums-exercises/exercises/map_test.rb",
+		"/Users/Kit/turing/enums-exercises/CONTRIBUTING.md",
+		"/Users/Kit/turing/ideabox/ideabox/Gemfile",
+		"/Users/Kit/turing/ruby-exercises/mythical-creatures/medusa.rb",
+		"/Users/Kit/turing/ruby-exercises/mythical-creatures/medusa_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/baby.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/drops_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/drops.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/floor.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/person.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/teeth.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/tire.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/teeth_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/floor_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/pills_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/tire_test.rb",
+		"/Users/Kit/turing/ruby-exercises/command-query/person_test.rb",
+		"/Users/Kit/Library/Application Support/Sublime Text 2/Packages/RSpec/leather_chair.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/README.md",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/test/trick_or_treater_test.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-1/e5fed8349efb55edc806/candy.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/lib/trick_or_treater.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/test/costume_test.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/lib/costume.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/test/candy_test.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/test/bag_test.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/lib/candy.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-2/lib/bag.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-1/test/candy_test.rb",
+		"/Users/Kit/turing/ruby-exercises/objects-and-methods/exercise-1/test/bag_test.rb"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/Kit/rails_projects/OneFamOneRes/spec",
+			"",
+			"/Users/Kit/rails_projects/OneFamOneRes/spec/factories",
+			"/Users/Kit/rails_projects/OneFamOneRes/spec",
+			"",
+			"*.sass",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"self",
+			"my_ref",
+			"self",
+			"],)",
+			"repository",
+			"4923661117104166",
+			"4140149827486249",
+			"486249,,success,2012-03-27 14:54:10 UTC,2012-03-27 14:54:10 UTC",
+			"4540842003561938",
+			"4801647818676136",
+			"4203696133194408",
+			"4844518708741275",
+			"success",
+			"4203696133194408",
+			"4844518708741275",
+			"4515551623735607",
+			"35607,,success,2012-03-27 14:54:10 UTC,2012-03-27 14:54:10 UTC",
+			"4354495077693036",
+			"4580251236515201",
+			"4654405418249632",
+			"transactions_1",
+			"4738848761455352",
+			"4869639160798434",
+			"4411510861233607",
+			"4536896898764278",
+			"4017503416578382",
+			"4800749911485986",
+			"4923661117104166",
+			"4140149827486249",
+			"4540842003561938",
+			"4801647818676136",
+			"4203696133194408",
+			"4844518708741275",
+			"4515551623735607",
+			"4354495077693036",
+			"4580251236515201",
+			"card_number",
+			"invoice_id",
+			"card_number",
+			"4654405418249632",
+			"file_name",
+			"skip",
+			"Fixture::DATA",
+			"prod_data",
+			"get_file_path",
+			"quantity",
+			"price",
+			"quantity",
+			"invoice_item_1",
+			"invoive_item_data",
+			"invoice_item_data",
+			"binging",
+			"must_respond_to",
+			"created_at",
+			"unit_price",
+			"quantity",
+			"updated_at",
+			"created_at",
+			"unit_price",
+			"quanty",
+			"ActionController",
+			"descript",
+			"description",
+			"discription",
+			"discript",
+			"find_by_discription",
+			"customers",
+			"customer",
+			"first_name",
+			"customer_7",
+			"discription",
+			"find_by_discription",
+			"find_by_disctiption",
+			"Minima",
+			"customer",
+			"customers",
+			"customer",
+			"last_name",
+			"Toy",
+			"customer_3",
+			"require_relative",
+			"102",
+			"[]",
+			"data",
+			"attribute",
+			"    :",
+			"data",
+			"customers",
+			"Repository",
+			"ItemRepository",
+			"\")\n",
+			"(\"../",
+			"find_by_id",
+			"id",
+			"find_by_id",
+			"1",
+			"match",
+			"customer_repository",
+			"customer",
+			"data_path",
+			"test_data",
+			"st_d",
+			"binding",
+			"customer_repository",
+			"get_file_path",
+			"new",
+			"CustomerData",
+			"CustomerManager",
+			"date",
+			"Queue",
+			"csv_file",
+			"file",
+			"2014",
+			"pares",
+			"\")]\n",
+			"Order",
+			"orders",
+			"57",
+			"order",
+			"lib",
+			"* ",
+			"prosses",
+			"good_bye",
+			"difficulty",
+			"reen",
+			"hash[",
+			"each",
+			"close"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"process",
+			"Reservation",
+			"meal_donation",
+			"sponsor_user",
+			"restaurant",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/customer.rb",
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/sales_engine.rb",
+					"settings":
+					{
+						"buffer_size": 1475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/customer_repository_test.rb",
+					"settings":
+					{
+						"buffer_size": 1121,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/customer_repository.rb",
+					"settings":
+					{
+						"buffer_size": 897,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "test/sales_engine_test.rb",
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/customer_repository_test.rb",
+					"settings":
+					{
+						"buffer_size": 1121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test/customer_test.rb",
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								899,
+								899
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sales_engine.sublime-project",
+					"settings":
+					{
+						"buffer_size": 83,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.499572347047,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 195.0
+	},
+	"output.git":
+	{
+		"height": 94.0
+	},
+	"output.git-commit":
+	{
+		"height": 124.0
+	},
+	"output.git-merge":
+	{
+		"height": 88.0
+	},
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"cr",
+				"lib/customer_repository.rb"
+			],
+			[
+				"se",
+				"lib/sales_engine.rb"
+			],
+			[
+				"ct",
+				"test/customer_test.rb"
+			],
+			[
+				"invoice_repo",
+				"lib/invoices_repository.rb"
+			],
+			[
+				"cutomer.rb",
+				"lib/customer.rb"
+			],
+			[
+				"crt",
+				"test/customer_repository_test.rb"
+			],
+			[
+				"cre",
+				"lib/customer_repository.rb"
+			],
+			[
+				"crb",
+				"lib/customer.rb"
+			],
+			[
+				"c",
+				"data/customers.csv"
+			],
+			[
+				"set",
+				"test/sales_engine_test.rb"
+			],
+			[
+				"th",
+				"test/test_helper.rb"
+			],
+			[
+				"tr",
+				"lib/transactions_repository.rb"
+			],
+			[
+				"ir",
+				"test/item_repository_test.rb"
+			],
+			[
+				"gf",
+				"Gemfile"
+			],
+			[
+				"irb",
+				"lib/item.rb"
+			],
+			[
+				"irt",
+				"test/item_repository_test.rb"
+			],
+			[
+				"it",
+				"test/item_test.rb"
+			],
+			[
+				"sat",
+				"test/sales_engine_test.rb"
+			],
+			[
+				"sa",
+				"lib/sales_engine.rb"
+			],
+			[
+				"cd",
+				"lib/customer_data.rb"
+			],
+			[
+				"ea",
+				"data/event_attendees.csv"
+			],
+			[
+				"pl",
+				"lib/player.rb"
+			],
+			[
+				"p",
+				"lib/player.rb"
+			],
+			[
+				"cl",
+				"lib/cli.rb"
+			],
+			[
+				"mes",
+				"lib/messages.rb"
+			],
+			[
+				"cli",
+				"lib/cli.rb"
+			],
+			[
+				"ga",
+				"lib/game.rb"
+			],
+			[
+				"me",
+				"lib/messages.rb"
+			],
+			[
+				"mt",
+				"test/mastermind_test.rb"
+			],
+			[
+				"ma",
+				"lib/mastermind.rb"
+			],
+			[
+				"ca",
+				"exercise-1/e5fed8349efb55edc806/candy.rb"
+			],
+			[
+				"game",
+				"studio_game/game.rb"
+			],
+			[
+				"gs",
+				"studio_game/game_spec.rb"
+			],
+			[
+				"play",
+				"studio_game/player.rb"
+			],
+			[
+				"p6",
+				"prime_6.rb"
+			],
+			[
+				"p5",
+				"prime_5.rb"
+			],
+			[
+				"ass",
+				"exercism.io/test/api/assignments_test.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"ssac",
+				"spec/stories/admin/creates_and_edits_menu_items_spec.rb"
+			],
+			[
+				"ssadmin",
+				"spec/stories/admin_has_appropriate_abilities_spec.rb"
+			],
+			[
+				"ssic",
+				"spec/support/image_capybara_support.rb"
+			],
+			[
+				"ssret",
+				"spec/stories/restaurant_edits_their_images_spec.rb"
+			],
+			[
+				"rcs",
+				"spec/controllers/reservations_controller_spec.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"acmc",
+				"app/controllers/meal_donations_controller.rb"
+			],
+			[
+				"aasp_",
+				"app/assets/stylesheets/partials/_sidebar.sass"
+			],
+			[
+				"_sidebar",
+				"app/views/layouts/_standard_sidebar.html.haml"
+			],
+			[
+				"mres",
+				"app/models/reservation.rb"
+			],
+			[
+				"s",
+				"db/schema.rb"
+			],
+			[
+				"application_h",
+				"spec/helpers/application_helper_spec.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"aupl",
+				"app/uploaders/image_uploader.rb"
+			],
+			[
+				"aui",
+				"spec/requests/admin/admin_upload_images_spec.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"seeds",
+				"db/seeds.rb"
+			],
+			[
+				"avad",
+				"app/views/admin/documents/index.html.haml"
+			],
+			[
+				"appvielayadm",
+				"app/views/layouts/_admin_nav.html.haml"
+			],
+			[
+				"svad",
+				"spec/views/admin/documents/show.html_spec.rb"
+			],
+			[
+				"ssab",
+				"spec/stories/admin/blogs_and_topics_spec.rb"
+			],
+			[
+				"acad",
+				"app/controllers/admin/admin_controller.rb"
+			],
+			[
+				"adcs",
+				"spec/controllers/admin/documents_controller_spec.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"sml",
+				"spec/models/location_spec.rb"
+			],
+			[
+				"ihh",
+				"app/views/admin/upload/documents/index.html.haml"
+			],
+			[
+				"_form",
+				"app/views/admin/pages/_form.html.haml"
+			],
+			[
+				"new",
+				"app/views/admin/locations/new.html.haml"
+			],
+			[
+				"_list",
+				"app/views/admin/locations/_list_header.html.haml"
+			],
+			[
+				"show",
+				"app/views/admin/documents/show.html.haml"
+			],
+			[
+				"_f",
+				"app/views/admin/bios/_form.html.haml"
+			],
+			[
+				"image",
+				"app/uploaders/image_uploader.rb"
+			],
+			[
+				"location",
+				"app/models/location.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"yml",
+				"config/database.yml"
+			],
+			[
+				"smr",
+				"spec/models/reservation_spec.rb"
+			],
+			[
+				"sfuser",
+				"spec/factories/users_factory.rb"
+			],
+			[
+				"asfact",
+				"spec/factories/reservations_factory.rb"
+			],
+			[
+				"vps",
+				"spec/stories/visit_public_pages_spec.rb"
+			],
+			[
+				"usr",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"ssv",
+				"spec/stories/visit_public_pages_spec.rb"
+			],
+			[
+				"happl",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"helpers/a",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"vsi",
+				"app/views/static/index.html.haml"
+			],
+			[
+				"srb",
+				"db/schema.rb"
+			],
+			[
+				"proim",
+				"app/uploaders/profile_image_uploader.rb"
+			],
+			[
+				"mopa",
+				"app/models/page.rb"
+			],
+			[
+				"hc",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"app",
+				"config/application.rb"
+			],
+			[
+				"uc",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"ac",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"gm",
+				"Gemfile"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

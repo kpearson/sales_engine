@@ -2,9 +2,11 @@ require 'test_helper'
 require_relative '../lib/invoice_item_repository'
 
 class InvoiceItemRepositoryTest < Minitest::Test
+  include Fixture
   def setup
-    @test_data               = "./test/fixtures/invoice_items.csv"
-    @invoice_item_repository = InvoiceItemRepository.new(@test_data)
+    engine = SalesEngine.new
+    engine.startup(Fixture::DATA)
+    @invoice_item_repository = engine.invoice_items_repository
   end
 
   def test_invoice_items_repo_can_load

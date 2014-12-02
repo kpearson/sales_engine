@@ -3,8 +3,11 @@ require_relative '../lib/invoices_repository'
 
 
 class InvoiceRepositoryTest < Minitest::Test
+  include Fixture
   def setup
-    @invoices = InvoicesRepository.new("./test/fixtures/invoices.csv")
+    engine = SalesEngine.new
+    engine.startup(Fixture::DATA)
+    @invoices = engine.invoices_repository
   end
 
   def test_invoice_repository_has_correct_attributes
@@ -16,14 +19,14 @@ class InvoiceRepositoryTest < Minitest::Test
     assert_equal "1", invoice.id
   end
 
-  def test_invoice_find_by_customer_id
-    invoice = @invoices.find_by_customer_id("1")
-    assert_equal "1", invoice.customer_id
+  def test_invoice_find_all_by_customer_id
+    invoices = @invoices.find_all_by_customer_id("1")
+    assert_equal 8, invoices.count
   end
 
-  def test_invoice_find_by_merchant_id
-    invoice = @invoices.find_by_merchant_id("26")
-    assert_equal "26", invoice.merchant_id
+  def test_invoice_find_all_by_merchant_id
+    invoice = @invoices.find_all_by_merchant_id("27")
+    assert_equal 2, invoice.count
   end
 
   def test_invoice_find_all_by_status
