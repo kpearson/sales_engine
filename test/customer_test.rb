@@ -2,6 +2,7 @@ require_relative 'test_helper'
 require_relative '../lib/customer'
 
 class CustomerTest < Minitest::Test
+  include Fixture
 
   def test_it_has_correct_attributes
     data = {
@@ -17,19 +18,9 @@ class CustomerTest < Minitest::Test
 
   def test_customer_can_find_its_invoices
     engine = SalesEngine.new
-    engine.startup(fixture_data)
-    customer = engine.customers.find_by_id(1)
-    assert_equal 8, customer.invoices
-  end
-
-  def fixture_data
-    {
-    :items_data         => "./test/fixtures/items.csv",
-    :invoices_data      => "./test/fixtures/invoices.csv",
-    :customers_data     => "./test/fixtures/customers.csv",
-    :merchants_data     => "./test/fixtures/merchants.csv",
-    :transactions_data  => "./test/fixtures/transactions.csv",
-    :invoice_items_data => "./test/fixtures/invoice_items.csv"
-    }
+    engine.startup(Fixture::DATA)
+    repository = engine.customers_repository
+    customer = repository.customers.find { |c| c.id == "1" }
+    assert_equal 8, customer.invoices.count
   end
 end

@@ -2,10 +2,11 @@ require_relative 'test_helper'
 require_relative '../lib/customer_repository'
 
 class CustomerRepositoryTest < Minitest::Test
+  include Fixture
   def setup
     engine = SalesEngine.new
-    engine.startup(fixture_data)
-    @customer_repository = engine.customers
+    engine.startup(Fixture::DATA,)
+    @customer_repository = engine.customers_repository
   end
 
   def test_customers_file
@@ -37,10 +38,10 @@ class CustomerRepositoryTest < Minitest::Test
 
   def test_finds_all_customer_invoices
     customer_1 = @customer_repository.find_by_id("1")
-    assert_equal 8, customer_1.invoices(1).count
+    assert_equal 8, customer_1.invoices.count
   end
 
-  def fixture_data
+  def Fixture::DATA
     {
     :items_data         => "./test/fixtures/items.csv",
     :invoices_data      => "./test/fixtures/invoices.csv",

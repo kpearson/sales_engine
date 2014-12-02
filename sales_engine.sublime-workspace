@@ -25,7 +25,7 @@
 			],
 			[
 				"fixture",
-				"fixture_data"
+				"Fixture::DATA"
 			],
 			[
 				"invoice",
@@ -53,7 +53,7 @@
 			],
 			[
 				"fix",
-				"fixture_data"
+				"Fixture::DATA"
 			],
 			[
 				"seq",
@@ -727,7 +727,7 @@
 			"4654405418249632",
 			"file_name",
 			"skip",
-			"fixture_data",
+			"Fixture::DATA",
 			"prod_data",
 			"get_file_path",
 			"quantity",

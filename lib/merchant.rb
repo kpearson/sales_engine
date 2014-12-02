@@ -4,10 +4,11 @@ class Merchant
               :created_at,
               :updated_at
 
-  def initialize(data)
+  def initialize(data, repository)
     @id         = data[:id]
     @name       = data[:name]
     @created_at = data[:created_at]
     @updated_at = data[:updated_at]
+    @repository = repository
   end
 end

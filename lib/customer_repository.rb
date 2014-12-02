@@ -10,7 +10,6 @@ class CustomerRepository
   end
 
   def customer_data(file_path)
-    # my_ref = self
     csv = CSV.open("#{file_path}",
           headers: true, header_converters: :symbol)
     csv.map do |row|
@@ -18,9 +17,9 @@ class CustomerRepository
     end
   end
 
-  # def inspect
-  #   "#<\#{self.class} \#{@customers.size} rows>"
-  # end
+  def inspect
+    "<#{self.class} #{@customers.size} rows>"
+  end
 
   def all
     customers

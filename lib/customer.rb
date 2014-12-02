@@ -15,8 +15,7 @@ class Customer
   end
 
 
-  def invoices(id)
-    binding.pry
+  def invoices
     @repository.invoices(id)
   end
 end

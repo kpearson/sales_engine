@@ -3,8 +3,11 @@ require_relative '../lib/invoices_repository'
 
 
 class InvoiceRepositoryTest < Minitest::Test
+  include Fixture
   def setup
-    @invoices = InvoicesRepository.new("./test/fixtures/invoices.csv")
+    engine = SalesEngine.new
+    engine.startup(Fixture::DATA)
+    @invoices = engine.invoices_repository
   end
 
   def test_invoice_repository_has_correct_attributes

@@ -2,10 +2,11 @@ require_relative "test_helper"
 require_relative '../lib/transactions_repository'
 
 class TransactionsRepositoryTest < Minitest::Test
+  include Fixture
   def setup
-    test_data ="./test/fixtures/transactions.csv"
-    prod_data ="./data/transactions.csv"
-    @transactions_repository = TransactionsRepository.new(test_data)
+    engine = SalesEngine.new
+    engine.startup(Fixture::DATA,)
+    @transactions_repository = engine.transactions_repository
   end
 
   def test_transactions_repo_can_load

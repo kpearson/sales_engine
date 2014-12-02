@@ -10,8 +10,8 @@ class MerchantTest < Minitest::Test
             created_at: "2012-03-27 14:53:59 UTC",
             updated_at: "2012-03-27 14:53:59 UTC",
             }
-    merchant = Merchant.new(data)
-    assert merchant.id 
+    merchant = Merchant.new(data, nil)
+    assert merchant.id
     assert merchant.name
     assert merchant.created_at
     assert merchant.updated_at

@@ -14,7 +14,7 @@ class InvoiceItemTest < Minitest::Test
             created_at: "2012-03-27 14:54:09 UTC",
             updated_at: "2012-03-27 14:54:09 UTC"
             }
-    inv_itm = InvoiceItem.new(data)
+    inv_itm = InvoiceItem.new(data, nil)
     assert inv_itm.id
     assert inv_itm.item_id
     assert inv_itm.invoice_id
