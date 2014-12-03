@@ -37,6 +37,11 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal 3, item_3.id
   end
 
+  def test_items_find_by_unit_price
+    item = @item_repository.find_by_unit_price("$751.07")
+    assert_equal 1, item.id
+  end
+
   def test_find_by_description
     description = "Fuga assumenda occaecati hic dolorem tenetur dolores nisi. Est tenetur adipisci voluptatem vel. Culpa adipisci consequatur illo. Necessitatibus quis quo velit sed repellendus ut amet."
     item_7 = @item_repository.find_by_description(description)

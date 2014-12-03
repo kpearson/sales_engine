@@ -39,6 +39,12 @@ class ItemRepository
     end
   end
 
+  def find_by_unit_price(price)
+    items.find do |item|
+      item.unit_price == price
+    end
+  end
+
   def find_by_description(description)
     items.find do |item|
       item.description == description
