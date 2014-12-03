@@ -3,10 +3,11 @@ class Customer
               :first_name,
               :last_name,
               :created_at,
-              :updated_at
+              :updated_at,
+              :repository
 
   def initialize(data, repository)
-    @id         = data[:id]
+    @id         = data[:id].to_i
     @first_name = data[:first_name]
     @last_name  = data[:last_name]
     @created_at = data[:created_at]
@@ -16,6 +17,12 @@ class Customer
 
 
   def invoices
-    @repository.invoices(id)
+    repository.invoices(id)
   end
+
+  def transactions
+    invoices.find_all { |invoice| invoice.transactions}
+  end
+
+
 end

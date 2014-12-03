@@ -1,10 +1,11 @@
 module Production
-  DATA = {
-    :customers_data     => "data/customers.csv",
-    :items_data         => "data/items.csv",
-    :merchant_data      => "data/merchants.csv",
-    :invoice_items_data => "data/invoice_items.csv",
-    :invoice_data       => "data/invoices.csv",
-    :transaction_data   => "data/transactions.csv"
-  }
+  def self.data
+    sales_engine_root = File.expand_path('../..', __FILE__)
+    fixture_data = File.join sales_engine_root, 'data'
+  end
+
+  def self.CSVHandeler(file_name)
+    hash = CSV.read(file_name, headers: true, header_converters: :symbol)
+  end
+
 end

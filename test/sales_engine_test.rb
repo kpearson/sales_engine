@@ -3,35 +3,35 @@ require_relative 'test_helper'
 class SalesEngineTest < Minitest::Test
   include Fixture
   def setup
-    @engine = SalesEngine.new
+    @engine = SalesEngine.new(Fixture.data)
   end
 
   def test_sales_engine_startup
-    assert @engine.startup(Fixture::DATA)
+    assert @engine.startup
   end
 
   def test_sales_engine_create_customers
-    @engine.startup(Fixture::DATA)
-    assert @engine.customers_repository
+    @engine.startup
+    assert @engine.customer_repository
   end
 
   def test_engine_can_create_items_repo
-    @engine.startup(Fixture::DATA)
-    assert @engine.items_repository
+    @engine.startup
+    assert @engine.item_repository
   end
 
   def test_engine_can_create_incvoice_items_repo
-    @engine.startup(Fixture::DATA)
-    assert @engine.invoice_items_repository
+    @engine.startup
+    assert @engine.invoice_item_repository
   end
 
   def test_engine_can_create_merchants_repo
-    @engine.startup(Fixture::DATA)
-    assert @engine.merchants_repository
+    @engine.startup
+    assert @engine.merchant_repository
   end
 
   def test_engine_can_create_invoice_repo
-    @engine.startup(Fixture::DATA)
-    assert @engine.invoices_repository
+    @engine.startup
+    assert @engine.invoice_repository
   end
 end

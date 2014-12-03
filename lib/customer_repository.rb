@@ -4,15 +4,13 @@ require_relative 'customer'
 class CustomerRepository
   attr_reader :customers
 
-  def initialize(file_name, parent)
-    @customers = customer_data(file_name)
+  def initialize(data, parent)
+    @customers = customer_data(data)
     @engine    = parent
   end
 
-  def customer_data(file_path)
-    csv = CSV.open("#{file_path}",
-          headers: true, header_converters: :symbol)
-    csv.map do |row|
+  def customer_data(data)
+    data.map do |row|
       Customer.new(row, self)
     end
   end
@@ -25,7 +23,12 @@ class CustomerRepository
     customers
   end
 
+  def ramdom
+    customers.sample
+  end
+
   def invoices(customer_id)
+    customer_id = customer_id
     @engine.customer_invoices(customer_id)
   end
 
@@ -41,8 +44,8 @@ class CustomerRepository
     end
   end
 
-  def find_by_first_name(first_name)
-    customers.find do |customer|
+  def find_all_by_first_name(first_name)
+    customers.find_all do |customer|
       customer.first_name == first_name
     end
   end
