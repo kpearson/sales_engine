@@ -23,6 +23,10 @@ class ItemRepository
     items
   end
 
+  def random
+    items.sample
+  end
+
   def find_by_id(id)
     items.find do |item|
       item.id == id

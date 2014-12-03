@@ -17,6 +17,14 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal 16, @item_repository.all.count
   end
 
+
+
+  def test_items_random
+    items_1 = @items_repository.random
+    items_2 = @items_repository.random
+    refute_equal items_repository_1.id, items_repository_2.id
+  end
+
   def test_items_find_by_id
     item_1 = @item_repository.find_by_id(1)
     assert_equal 1, item_1.id

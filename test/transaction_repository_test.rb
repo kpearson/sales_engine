@@ -17,6 +17,12 @@ class TransactionRepositoryTest < Minitest::Test
     assert_equal 16, @transaction_repository.all.count
   end
 
+  def test_transactions_random
+    transaction_1 = @transaction_repository.random
+    transaction_2 = @transaction_repository.random
+    refute_equal transaction_1.id, transaction_2.id
+  end
+
   def test_transactions_find_by_id
     transaction_1 = @transaction_repository.find_by_id(1)
     assert_equal 1, transaction_1.id

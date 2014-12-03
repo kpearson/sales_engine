@@ -23,6 +23,10 @@ class TransactionRepository
     transactions
   end
 
+  def random
+    transactions.sample
+  end
+
   def find_by_id(id)
     transactions.find do |transaction|
       transaction.id == id
