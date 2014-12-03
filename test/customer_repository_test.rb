@@ -18,8 +18,9 @@ class CustomerRepositoryTest < Minitest::Test
   end
 
   def test_customers_random
-    skip
-    assert_equal
+    customer_1 = @customer_repository.random
+    customer_2 = @customer_repository.random
+    refute_equal customer_1.id, customer_2.id
   end
 
   def test_find_by_id

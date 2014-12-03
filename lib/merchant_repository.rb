@@ -24,7 +24,7 @@ class MerchantRepository
   end
 
   def random
-    merchants.sample
+    merchant.sample
   end
 
   def find_by_id(id)

@@ -17,6 +17,12 @@ class InvoiceItemRepositoryTest < Minitest::Test
     assert_equal 15, @invoice_item_repository.all.count
   end
 
+  def test_invoice_items_random
+    invoice_item_1 = @invoice_item_repository.random
+    invoice_item_2 = @invoice_item_repository.random
+    refute_equal invoice_id_1, invoice_id_2
+  end
+
   def test_invoice_items_find_all_by_item_id
     invoice_items = @invoice_item_repository.find_all_by_item(539)
     assert_equal 1, invoice_items.count

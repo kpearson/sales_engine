@@ -14,6 +14,16 @@ class InvoiceRepositoryTest < Minitest::Test
     assert @invoices
   end
 
+  def test_invoice_repository_all
+    assert_equal 16, @invoice_repository.all.count
+  end
+
+  def test_invoice_repository_random
+    invoice_repository_1 = @invoice_repository.random
+    invoice_repository_2 = @invoice_repository.random
+    refute_equal invoice_repository_1, invoice_repository_2
+  end
+
   def test_invoice_find_by_id
     invoice = @invoices.find_by_id(1)
     assert_equal 1, invoice.id

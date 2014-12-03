@@ -13,8 +13,14 @@ class MerchantRepositoryTest < Minitest::Test
     assert @merchant_repository
   end
 
-  def test_all_merchants
+  def test_merchants_all
     assert_equal 100, @merchant_repository.all.count
+  end
+
+  def test_merchants_random
+    merchant_1 = @merchant_repository.random
+    merchant_2 = @merchant_repository.random
+    refute_equal merchant_1.id, merchant_2.id
   end
 
   def test_merchants_find_by_id
