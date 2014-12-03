@@ -23,6 +23,10 @@ class MerchantRepository
     merchants
   end
 
+  def random
+    merchants.sample
+  end
+
   def find_by_id(id)
     merchants.find do |merchant|
       merchant.id == id

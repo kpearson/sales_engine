@@ -24,7 +24,7 @@ class InvoiceItemRepositoryTest < Minitest::Test
 
   def test_invoice_items_find_by_item_id
     invoice_item = @invoice_item_repository.find_by_item_id(539)
-    assert_equal 136.35, invoice_item.unit_price
+    assert_equal "$136.35", invoice_item.unit_price
   end
 
   def test_invoice_items_find_all_by_invoice_id
@@ -38,8 +38,8 @@ class InvoiceItemRepositoryTest < Minitest::Test
   end
 
   def test_invoice_items_find_by_invoice_price
-    invoice_item_1 = @invoice_item_repository.find_by_price(136.35)
+    invoice_item_1 = @invoice_item_repository.find_by_price("$136.35")
     assert_equal 1, invoice_item_1.id
-    assert_equal 136.35, invoice_item_1.unit_price
+    assert_equal "$136.35", invoice_item_1.unit_price
   end
 end

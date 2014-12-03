@@ -23,6 +23,10 @@ class ItemRepository
     items
   end
 
+  def random
+    items.sample
+  end
+
   def find_by_id(id)
     items.find do |item|
       item.id == id
@@ -32,6 +36,12 @@ class ItemRepository
   def find_by_name(name)
     items.find do |item|
       item.name == name
+    end
+  end
+
+  def find_by_unit_price(price)
+    items.find do |item|
+      item.unit_price == price
     end
   end
 
