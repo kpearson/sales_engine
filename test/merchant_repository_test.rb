@@ -26,4 +26,9 @@ class MerchantRepositoryTest < Minitest::Test
     merchant_1 = @merchant_repository.find_by_name("Schroeder-Jerde")
     assert_equal "Schroeder-Jerde", merchant_1.name
   end
+
+  def test_merchants_find_all_by_name
+    merchants = @merchant_repository.find_all_by_name("Williamson Group")
+    assert_equal 2, merchants.count
+  end
 end

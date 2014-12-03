@@ -63,6 +63,22 @@ class SalesEngine
     invoice_item_repository.find_all_by_invoice(invoice_id)
   end
 
+  def invoice_item(item_id)
+    item_repository.find_by_id(item_id)
+  end
+
+  def invoice_by(invoice_id)
+    invoice_repository.find_by_id(invoice_id)
+  end
+
+  def customer_by(customer_id)
+    customer_repository.find_by_id(customer_id)
+  end
+
+  def find_item_by(item_id)
+    item_repository.find_by_id(item_id)
+  end
+
   # def CSVHandeler(file_name)
   #   hash = CSV.read(file_name, headers: true, header_converters: :symbol)
   # end

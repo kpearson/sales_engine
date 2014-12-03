@@ -5,7 +5,8 @@ class InvoiceItem
               :quantity,
               :unit_price,
               :created_at,
-              :updated_at
+              :updated_at,
+              :repository
 
   def initialize(data, repository)
     @id         = data[:id].to_i
@@ -16,5 +17,9 @@ class InvoiceItem
     @created_at = data[:created_at]
     @updated_at = data[:updated_at]
     @repository = repository
+  end
+
+  def item
+    repository.find_item_by(item_id)
   end
 end

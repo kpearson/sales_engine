@@ -14,7 +14,7 @@ class ItemRepositoryTest < Minitest::Test
   end
 
   def test_items_all
-    assert_equal 15, @item_repository.all.count
+    assert_equal 16, @item_repository.all.count
   end
 
   def test_items_find_by_id

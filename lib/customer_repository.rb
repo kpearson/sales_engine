@@ -23,7 +23,7 @@ class CustomerRepository
     customers
   end
 
-  def ramdom
+  def random
     customers.sample
   end
 

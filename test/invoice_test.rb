@@ -38,4 +38,12 @@ class InvoiceTest < Minitest::Test
   def test_invoice_finds_total_item_quantity
     assert_equal 0, @invoice.total_item_quantity
   end
+
+  def test_successful_transaction?
+    assert @invoice.successful_transaction?
+  end
+
+  def test_invoice_finds_customer_by_id
+    assert_equal 3, @invoice.customer.id
+  end
 end

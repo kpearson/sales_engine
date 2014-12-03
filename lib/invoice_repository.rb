@@ -16,7 +16,7 @@ class InvoicesRepository
   end
 
   def inspect
-    "<#{self.class} #{@items.size} rows>"
+    "<#{self.class} #{@invoices.size} rows>"
   end
 
   def all
@@ -49,6 +49,10 @@ class InvoicesRepository
 
   def transactions(invoice_id)
     engine.invoice_transactions(invoice_id)
+  end
+
+  def find_customer_by(customer_id)
+    engine.customer_by(customer_id)
   end
 
   def invoice_items(invoice_id)

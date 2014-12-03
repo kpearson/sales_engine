@@ -2,7 +2,7 @@ require 'csv'
 require_relative 'transaction'
 
 class TransactionRepository
-  attr_reader :transactions
+  attr_reader :transactions, :engine
 
   def initialize(data, parent)
     @transactions = transaction_data(data)
@@ -29,6 +29,10 @@ class TransactionRepository
     end
   end
 
+  def find_invoice_by(invoice_id)
+    engine.invoice_by(invoice_id)
+  end
+
   def find_all_by_invoice(invoice_id)
     transactions.find_all do |transaction|
       transaction.invoice_id == invoice_id
@@ -41,9 +45,9 @@ class TransactionRepository
     end
   end
 
-  def find_by_transaction_success
+  def find_all_by_result(result)
     transactions.find_all do |transaction|
-      transaction.result == "success"
+      transaction.result == result
     end
   end
 
