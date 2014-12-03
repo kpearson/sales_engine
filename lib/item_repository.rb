@@ -4,15 +4,13 @@ require_relative 'item'
 class ItemRepository
   attr_reader :items
 
-  def initialize(file_name, parent)
-    @items     = item_data(file_name)
+  def initialize(data, parent)
+    @items     = item_data(data)
     @engine    = parent
   end
 
-  def item_data(file_path)
-    csv = CSV.open("#{file_path}",
-          headers: true, header_converters: :symbol)
-    csv.map do |row|
+  def item_data(data)
+    data.map do |row|
       Item.new(row, self)
     end
   end

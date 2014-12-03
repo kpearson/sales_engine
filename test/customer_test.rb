@@ -3,6 +3,12 @@ require_relative '../lib/customer'
 
 class CustomerTest < Minitest::Test
   include Fixture
+  def setup
+    engine = SalesEngine.new(Fixture.data)
+    engine.startup
+    repository = engine.customer_repository
+    @customer = repository.customers.find { |c| c.id == 1 }
+  end
 
   def test_it_has_correct_attributes
     data = {
@@ -16,11 +22,12 @@ class CustomerTest < Minitest::Test
     assert_equal "Joey", customer.first_name
   end
 
-  def test_customer_can_find_its_invoices
-    engine = SalesEngine.new
-    engine.startup(Fixture::DATA)
-    repository = engine.customers_repository
-    customer = repository.customers.find { |c| c.id == "1" }
-    assert_equal 8, customer.invoices.count
+  def test_customer_finds_all_of_its_invoices
+    assert_equal 8, @customer.invoices.count
+
+  end
+
+  def test_customer_finds_all_of_its_trasactions
+    assert_equal 8, @customer.transactions.count
   end
 end

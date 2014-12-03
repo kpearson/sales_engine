@@ -4,15 +4,13 @@ require_relative 'merchant'
 class MerchantRepository
   attr_reader :merchants
 
-  def initialize(file_name, parent)
-    @merchants = merchant_data(file_name)
+  def initialize(data, parent)
+    @merchants = merchant_data(data)
     @engine    = parent
   end
 
-  def merchant_data(file_path)
-    csv = CSV.open("#{file_path}",
-        headers: true, header_converters: :symbol)
-    csv.map do |row|
+  def merchant_data(data)
+    data.map do |row|
     Merchant.new(row, self)
     end
   end

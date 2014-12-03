@@ -2,17 +2,15 @@ require 'csv'
 require_relative 'invoice'
 
 class InvoicesRepository
-  attr_reader :invoices
+  attr_reader :invoices, :engine
 
-  def initialize(file_name, parent)
-    @invoices = invoices_data(file_name)
+  def initialize(data, parent)
+    @invoices = invoices_data(data)
     @engine    = parent
   end
 
-  def invoices_data(file_name)
-    csv = CSV.open("#{file_name}",
-      headers: true, header_converters: :symbol)
-    csv.map do |row|
+  def invoices_data(data)
+    data.map do |row|
       Invoice.new(row, self)
     end
   end
@@ -47,5 +45,13 @@ class InvoicesRepository
     invoices.find_all do |invoice|
       invoice.status == status
     end
+  end
+
+  def transactions(invoice_id)
+    engine.invoice_transactions(invoice_id)
+  end
+
+  def invoice_items(invoice_id)
+    engine.invoice_items_belonging_to_invoice(invoice_id)
   end
 end

@@ -1,4 +1,5 @@
 class Item
+  # include DateHandler
   attr_reader :id,
               :name,
               :description,
@@ -8,11 +9,11 @@ class Item
               :updated_at
 
   def initialize(data, repository)
-    @id          = data[:id]
+    @id          = data[:id].to_i
     @name        = data[:name]
     @description = data[:description]
-    @unit_price  = data[:unit_price]
-    @merchant_id = data[:merchant_id]
+    @unit_price  = BigDecimal(data[:unit_price])/100
+    @merchant_id = data[:merchant_id].to_i
     @created_at  = data[:created_at]
     @updated_at  = data[:updated_at]
     @repository = repository

@@ -33,7 +33,7 @@
 			],
 			[
 				"in",
-				"invoice_items_repository"
+				"invoice_item_repository"
 			],
 			[
 				"re",
@@ -537,11 +537,11 @@
 		"/Users/Kit/turing/projects/sales_engine/test/fixtures/invoices.csv",
 		"/Users/Kit/turing/projects/sales_engine/lib/customer.rb",
 		"/Users/Kit/turing/projects/sales_engine/test/item_repository_test.rb",
-		"/Users/Kit/turing/projects/sales_engine/lib/invoices_repository.rb",
-		"/Users/Kit/turing/projects/sales_engine/test/invoices_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/invoice_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/invoice_repository_test.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/item_repository.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/merchant_repository.rb",
-		"/Users/Kit/turing/projects/sales_engine/lib/transactions_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/lib/transaction_repository.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/invoice_item_repository.rb",
 		"/Users/Kit/turing/projects/sales_engine/data/customers.csv",
 		"/Users/Kit/turing/projects/sales_engine/test/test_helper.rb",
@@ -551,13 +551,13 @@
 		"/Users/Kit/turing/projects/sales_engine/asdkljfas",
 		"/Users/Kit/turing/projects/sales_engine/lkdjfl;kasdj",
 		"/Users/Kit/turing/projects/sales_engine/skdjafl;kj",
-		"/Users/Kit/turing/projects/sales_engine/test/transactions_repository_test.rb",
+		"/Users/Kit/turing/projects/sales_engine/test/transaction_repository_test.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/item.rb",
 		"/Users/Kit/turing/projects/sales_engine/test/fixtures/transactions.csv",
 		"/Users/Kit/turing/projects/sales_engine/lib/data_handler.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/transaction.rb",
 		"/Users/Kit/turing/projects/sales_engine/test/item_test.rb",
-		"/Users/Kit/turing/projects/sales_engine/transactions_repository.rb",
+		"/Users/Kit/turing/projects/sales_engine/transaction_repository.rb",
 		"/Users/Kit/turing/projects/sales_engine/transations_repository_test.rb",
 		"/Users/Kit/turing/projects/sales_engine/lib/invoice_item.rb",
 		"/Users/Kit/turing/projects/sales_engine/Gemfile",
@@ -1166,7 +1166,7 @@
 			],
 			[
 				"invoice_repo",
-				"lib/invoices_repository.rb"
+				"lib/invoice_repository.rb"
 			],
 			[
 				"cutomer.rb",
@@ -1198,7 +1198,7 @@
 			],
 			[
 				"tr",
-				"lib/transactions_repository.rb"
+				"lib/transaction_repository.rb"
 			],
 			[
 				"ir",

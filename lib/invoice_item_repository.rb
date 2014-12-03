@@ -9,10 +9,8 @@ class InvoiceItemRepository
     @engine        = parent
   end
 
-  def invoice_item_data(file_name)
-    csv = CSV.open("#{file_name}",
-          headers: true, header_converters: :symbol)
-    csv.map do |row|
+  def invoice_item_data(data)
+    data.map do |row|
       InvoiceItem.new(row, self)
     end
   end
@@ -31,14 +29,14 @@ class InvoiceItemRepository
     end
   end
 
-  def find_by_item_id(id)
-    invoice_items.find do |invoice_item|
+  def find_all_by_item(id)
+    invoice_items.find_all do |invoice_item|
       invoice_item.item_id == id
     end
   end
 
-  def find_by_invoice_id(id)
-    invoice_items.find do |invoice_item|
+  def find_all_by_invoice(id)
+    invoice_items.find_all do |invoice_item|
       invoice_item.invoice_id == id
     end
   end
@@ -55,3 +53,5 @@ class InvoiceItemRepository
     end
   end
 end
+    # csv = CSV.open("#{file_name}",
+    #       headers: true, header_converters: :symbol)
