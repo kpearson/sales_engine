@@ -12,7 +12,7 @@ class TransactionTest < Minitest::Test
       :created_at => "2012-03-27 14:54:09 UTC",
       :updated_at => "2012-03-27 14:54:09 UTC"
     }
-    transaction = Transaction.new(data, nil)
+    @transaction = Transaction.new(data, nil)
     assert transaction.id
     assert transaction.invoice_id
     assert transaction.credit_card_number
@@ -20,6 +20,10 @@ class TransactionTest < Minitest::Test
     assert transaction.result
     assert transaction.created_at
     assert transaction.updated_at
+  end
+
+  def test_transaction_success?
+    assert @transaction.successful_transaction?
   end
 
 end
