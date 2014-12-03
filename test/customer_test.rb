@@ -24,7 +24,6 @@ class CustomerTest < Minitest::Test
 
   def test_customer_finds_all_of_its_invoices
     assert_equal 8, @customer.invoices.count
-
   end
 
   def test_customer_finds_all_of_its_trasactions

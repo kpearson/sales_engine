@@ -23,6 +23,4 @@ class Customer
   def transactions
     invoices.find_all { |invoice| invoice.transactions}
   end
-
-
 end

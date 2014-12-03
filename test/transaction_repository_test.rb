@@ -35,9 +35,9 @@ class TransactionRepositoryTest < Minitest::Test
     assert_equal card_number, transaction_1.credit_card_number
   end
 
-  def test_find_by_result
-    successful_transactions = @transaction_repository.
-                              find_by_transaction_success
-    assert_equal 12, successful_transactions.count
+  def test_find_all_by_result
+    transactions = @transaction_repository.
+                              find_all_by_result "sucsess"
+    assert_equal 0, transactions.count
   end
 end

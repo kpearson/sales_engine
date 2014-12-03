@@ -21,11 +21,19 @@ class Invoice
     repository.transactions(id)
   end
 
+  def customer
+    repository.find_customer_by(customer_id)
+  end
+
   def invoice_items
     repository.invoice_items(id)
   end
 
   def total_item_quantity
     invoice_items.inject(0) { |sum, item| total + item.quantity}
+  end
+
+  def successful_transaction?
+    transactions.any? { |transaction| transaction.successful_transaction? }
   end
 end

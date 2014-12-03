@@ -1,9 +1,14 @@
 require_relative 'test_helper'
 require_relative '../lib/invoice_item'
 
-# require File.dirname(__FILE__) + '/../test_helper'
-
 class InvoiceItemTest < Minitest::Test
+  def setup
+    engine = SalesEngine.new(Fixture.data)
+    engine.startup
+    @repository = engine.invoice_item_repository
+    @invoice_item = @repository.invoice_items.find { |c| c.id == 1 }
+  end
+
   def test_invoice_items_have_correct_attributes
     data = {
             id: "1",
@@ -21,5 +26,10 @@ class InvoiceItemTest < Minitest::Test
     assert inv_itm.quantity
     assert inv_itm.created_at
     assert inv_itm.updated_at
+  end
+
+  def test_invoice_items_can_find_an_item
+    invoice_item = @repository.find_by_id(1)
+    assert_equal "Item Sunt Saepe", invoice_item.item.name
   end
 end

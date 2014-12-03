@@ -17,26 +17,24 @@ class InvoiceItemRepositoryTest < Minitest::Test
     assert_equal 15, @invoice_item_repository.all.count
   end
 
-  def test_invoice_items_find_by_id
-    invoice_item_1 = @invoice_item_repository.find_by_id(1)
-    assert_equal 1, invoice_item_1.id
-    assert_equal 5, invoice_item_1.quantity
-  end
-
-  def test_invoice_items_find_by_all_item_id
+  def test_invoice_items_find_all_by_item_id
     invoice_items = @invoice_item_repository.find_all_by_item(539)
     assert_equal 1, invoice_items.count
   end
 
-  def test_invoice_items_find_by_all_invoice_id
+  def test_invoice_items_find_by_item_id
+    invoice_item = @invoice_item_repository.find_by_item_id(539)
+    assert_equal 136.35, invoice_item.unit_price
+  end
+
+  def test_invoice_items_find_all_by_invoice_id
     invoice_items = @invoice_item_repository.find_all_by_invoice(1)
     assert_equal 8, invoice_items.count
   end
 
-  def test_invoice_items_find_by_quantity
-    invoice_item_1 = @invoice_item_repository.find_by_quantity(5)
-    assert_equal 1, invoice_item_1.id
-    assert_equal 5, invoice_item_1.quantity
+  def test_invoice_items_find_all_by_quantity
+    invoice_items = @invoice_item_repository.find_all_by_quantity(5)
+    assert_equal 3, invoice_items.count
   end
 
   def test_invoice_items_find_by_invoice_price
