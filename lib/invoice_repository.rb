@@ -23,6 +23,10 @@ class InvoicesRepository
     invoices
   end
 
+  def random
+    invoices.sample
+  end
+
   def find_by_id(id)
     invoices.find do |invoice|
       invoice.id == id
