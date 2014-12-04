@@ -15,7 +15,7 @@ class InvoiceRepositoryTest < Minitest::Test
   end
 
   def test_invoice_repository_all
-    assert_equal 16, @invoices.all.count
+    assert_equal 300, @invoices.all.count
   end
 
   def test_invoice_repository_random
@@ -36,11 +36,16 @@ class InvoiceRepositoryTest < Minitest::Test
 
   def test_invoice_find_all_by_merchant_id
     invoice = @invoices.find_all_by_merchant_id(27)
-    assert_equal 2, invoice.count
+    assert_equal 7, invoice.count
   end
 
   def test_invoice_find_all_by_status
-    invoice = @invoices.find_by_status("shipped")
-    assert_equal 16, invoice.count
+    invoice = @invoices.find_all_by_status("shipped")
+    assert_equal 300, invoice.count
+  end
+
+  def test_invoice_find_by_status
+    invoice = @invoices.find_by_status("cool")
+    assert_equal nil, invoice
   end
 end

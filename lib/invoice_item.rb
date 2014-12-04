@@ -21,9 +21,7 @@ class InvoiceItem
 
   def price_converter(unit_price)
     price = BigDecimal.new(unit_price)/100
-    sprintf( "$%.02f" , price )
   end
-
 
   def item
     repository.find_item_by(item_id)
@@ -31,5 +29,9 @@ class InvoiceItem
 
   def invoice
     repository.find_invoice_by(invoice_id)
+  end
+
+  def item_revenue
+    BigDecimal.new(quantity * unit_price)
   end
 end

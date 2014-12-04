@@ -32,7 +32,7 @@ class InvoiceTest < Minitest::Test
   end
 
   def test_invoice_finds_invoice_items
-    assert_equal 0, @invoice.invoice_items.count
+    assert_equal 6, @invoice.items.count
   end
 
   def test_invoice_finds_total_item_quantity
@@ -45,5 +45,14 @@ class InvoiceTest < Minitest::Test
 
   def test_invoice_finds_customer_by_id
     assert_equal 3, @invoice.customer.id
+  end
+
+  def test_items
+    assert_equal 6, @invoice.items.size
+  end
+
+  def test_revenue
+     price = @invoice.revenue
+     assert_equal "$10161.56", sprintf( "$%.02f" , price )
   end
 end

@@ -2,7 +2,7 @@ require 'csv'
 require_relative 'merchant'
 
 class MerchantRepository
-  attr_reader :merchants
+  attr_reader :merchants, :engine
 
   def initialize(data, parent)
     @merchants = merchant_data(data)
@@ -46,10 +46,14 @@ class MerchantRepository
   end
 
   def items(merchant_id)
-    @engine.merchant_items(merchant_id)
+    engine.merchant_items(merchant_id)
   end
 
   def invoices(merchant_id)
-    @engine.merchant_invoices(merchant_id)
+    engine.merchant_invoices(merchant_id)
+  end
+
+  def revenue(date)
+    all.inject(BigDecimal.new(0)) {|sum, merchant| sum + merchant.revenue(date)}
   end
 end

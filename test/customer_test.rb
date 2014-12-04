@@ -31,7 +31,7 @@ class CustomerTest < Minitest::Test
   end
 
   def test_customer_finds_all_successful_transactions
-    assert_equal 7, @customer.successful_transactions.count
+    assert_equal 8, @customer.successful_transactions.count
   end
 
   def test_customer_favorite_merchant

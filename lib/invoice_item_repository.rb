@@ -59,6 +59,12 @@ class InvoiceItemRepository
     end
   end
 
+  def find_all_by_item(id)
+    invoice_items.find_all do |invoice_item|
+      invoice_item.item_id == id
+    end
+  end
+
   def find_all_by_quantity(quantity)
     invoice_items.find_all do |invoice_item|
       invoice_item.quantity == quantity

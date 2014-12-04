@@ -14,7 +14,7 @@ class InvoiceItemRepositoryTest < Minitest::Test
   end
 
   def test_invoice_items_all
-    assert_equal 15, @invoice_item_repository.all.count
+    assert_equal 799, @invoice_item_repository.all.count
   end
 
   def test_invoice_items_random
@@ -30,7 +30,8 @@ class InvoiceItemRepositoryTest < Minitest::Test
 
   def test_invoice_items_find_by_item_id
     invoice_item = @invoice_item_repository.find_by_item_id(539)
-    assert_equal "$136.35", invoice_item.unit_price
+    price = invoice_item.unit_price
+    assert_equal "$136.35", sprintf( "$%.02f" , price )
   end
 
   def test_invoice_items_find_all_by_invoice_id
@@ -40,12 +41,14 @@ class InvoiceItemRepositoryTest < Minitest::Test
 
   def test_invoice_items_find_all_by_quantity
     invoice_items = @invoice_item_repository.find_all_by_quantity(5)
-    assert_equal 3, invoice_items.count
+    assert_equal 97, invoice_items.count
   end
 
   def test_invoice_items_find_by_invoice_price
-    invoice_item_1 = @invoice_item_repository.find_by_price("$136.35")
+    invoice_item_1 = @invoice_item_repository.
+                     find_by_price(BigDecimal.new("13635")/100)
     assert_equal 1, invoice_item_1.id
-    assert_equal "$136.35", invoice_item_1.unit_price
+    price = invoice_item_1.unit_price
+    assert_equal "$136.35", sprintf("$%.02f", price)
   end
 end

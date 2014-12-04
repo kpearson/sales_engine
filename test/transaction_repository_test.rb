@@ -14,7 +14,7 @@ class TransactionRepositoryTest < Minitest::Test
   end
 
   def test_can_find_all_transactions
-    assert_equal 16, @transaction_repository.all.count
+    assert_equal 299, @transaction_repository.all.count
   end
 
   def test_transactions_random

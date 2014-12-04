@@ -6,7 +6,8 @@ class MerchantTest < Minitest::Test
     engine = SalesEngine.new(Fixture.data)
     engine.startup
     @repository = engine.merchant_repository
-    @merchant = @repository.merchants.find { |c| c.id == 1 }
+    @merchant = @repository.merchants.find { |c| c.id == 27 }
+    @date = Date.parse "Wed, 07 Mar 2012"
   end
 
   def test_merchants_have_the_correct_attributes
@@ -24,11 +25,31 @@ class MerchantTest < Minitest::Test
   end
 
   def test_merchant_finds_its_items
-    assert_equal 15, @merchant.items.count
+    merchant = @repository.merchants.find { |c| c.id == 1 }
+    assert_equal 15, merchant.items.count
   end
 
   def test_merchant_finds_its_invoices
-    merchant_27 = @repository.merchants.find { |c| c.id == 27 }
-    assert_equal 2, merchant_27.invoices.count
+    assert_equal 7, @merchant.invoices.count
+  end
+
+  def test_merchant_revenue_on_date
+    price = @merchant.revenue(@date)
+    assert_equal "$28778.59", sprintf( "$%.02f" , price )
+  end
+
+  def test_total_revenue
+    price = @merchant.total_revenue
+    assert_equal "$37322.53", sprintf( "$%.02f" , price )
+  end
+
+  def test_date_revenue
+    skip
+    price = @merchant.date_revenue(@date).
+    assert_equal "$1200", sprintf( "$%.02f" , price )
+  end
+
+  def test_invoices_form_date
+    assert_equal 2, @merchant.invoices_from_date(@date).size
   end
 end
