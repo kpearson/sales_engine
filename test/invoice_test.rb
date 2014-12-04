@@ -36,7 +36,7 @@ class InvoiceTest < Minitest::Test
   end
 
   def test_invoice_finds_total_item_quantity
-    assert_equal 0, @invoice.total_item_quantity
+    assert_equal 27, @invoice.total_item_quantity
   end
 
   def test_successful_transaction?

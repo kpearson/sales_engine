@@ -31,6 +31,13 @@ class Item
     @repository.find_merchant(merchant_id)
   end
 
+  def best_day
+    best_invoice_item = invoice_items.max_by do |invoice_item|
+      invoice_item.item_revenue
+    end
+    best_invoice_item.invoice.created_at
+  end
+
   # def revenue
   #   successful_invoice_items.inject(0) do |sum,invoice_item|
   #     sum + invoice_item.item_revenue

@@ -44,12 +44,15 @@ class MerchantTest < Minitest::Test
   end
 
   def test_date_revenue
-    skip
-    price = @merchant.date_revenue(@date).
-    assert_equal "$1200", sprintf( "$%.02f" , price )
+    price = @merchant.date_revenue(@date)
+    assert_equal "$28778.59", sprintf( "$%.02f" , price )
   end
 
   def test_invoices_form_date
     assert_equal 2, @merchant.invoices_from_date(@date).size
+  end
+
+  def test_favorit_customer
+    assert_equal "Braun", @merchant.favorite_customer.last_name
   end
 end
