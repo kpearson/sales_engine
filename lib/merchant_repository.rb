@@ -56,4 +56,8 @@ class MerchantRepository
   def revenue(date)
     all.inject(BigDecimal.new(0)) {|sum, merchant| sum + merchant.revenue(date)}
   end
+
+  def most_items(num)
+    all.sort_by {|merchant| merchant.items_sold}.reverse.take(num)
+  end
 end

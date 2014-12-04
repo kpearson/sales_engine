@@ -34,7 +34,7 @@ class Invoice
   end
 
   def total_item_quantity
-    items.inject(0) { |sum, item| sum + item.quantity}
+    invoice_items.inject(0) { |sum, item| sum + item.quantity }
   end
 
   def successful_transaction?
