@@ -15,12 +15,12 @@ class InvoiceRepositoryTest < Minitest::Test
   end
 
   def test_invoice_repository_all
-    assert_equal 16, @invoice_repository.all.count
+    assert_equal 16, @invoices.all.count
   end
 
   def test_invoice_repository_random
-    invoice_repository_1 = @invoice_repository.random
-    invoice_repository_2 = @invoice_repository.random
+    invoice_repository_1 = @invoices.random
+    invoice_repository_2 = @invoices.random
     refute_equal invoice_repository_1, invoice_repository_2
   end
 

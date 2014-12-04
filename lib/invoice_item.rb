@@ -28,4 +28,8 @@ class InvoiceItem
   def item
     repository.find_item_by(item_id)
   end
+
+  def invoice
+    repository.find_invoice_by(invoice_id)
+  end
 end

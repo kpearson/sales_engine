@@ -2,7 +2,7 @@ require 'csv'
 require_relative 'customer'
 
 class CustomerRepository
-  attr_reader :customers
+  attr_reader :customers, :engine
 
   def initialize(data, parent)
     @customers = customer_data(data)
@@ -28,8 +28,7 @@ class CustomerRepository
   end
 
   def invoices(customer_id)
-    customer_id = customer_id
-    @engine.customer_invoices(customer_id)
+    engine.customer_invoices(customer_id)
   end
 
   def find_by_id(id)

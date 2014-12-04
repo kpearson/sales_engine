@@ -32,4 +32,9 @@ class InvoiceItemTest < Minitest::Test
     invoice_item = @repository.find_by_id(1)
     assert_equal "Item Sunt Saepe", invoice_item.item.name
   end
+
+  def test_invoice_items_can_find_an_invoice
+    invoice_item = @repository.find_by_id(1)
+    assert_equal 26, invoice_item.invoice.merchant_id
+  end
 end

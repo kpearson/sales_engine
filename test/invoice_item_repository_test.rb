@@ -20,7 +20,7 @@ class InvoiceItemRepositoryTest < Minitest::Test
   def test_invoice_items_random
     invoice_item_1 = @invoice_item_repository.random
     invoice_item_2 = @invoice_item_repository.random
-    refute_equal invoice_id_1, invoice_id_2
+    refute_equal invoice_item_1, invoice_item_2
   end
 
   def test_invoice_items_find_all_by_item_id
