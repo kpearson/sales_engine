@@ -14,15 +14,13 @@ class ItemRepositoryTest < Minitest::Test
   end
 
   def test_items_all
-    assert_equal 16, @item_repository.all.count
+    assert_equal 200, @item_repository.all.count
   end
 
-
-
   def test_items_random
-    items_1 = @items_repository.random
-    items_2 = @items_repository.random
-    refute_equal items_repository_1.id, items_repository_2.id
+    item_1 = @item_repository.random
+    item_2 = @item_repository.random
+    refute_equal item_1.id, item_2.id
   end
 
   def test_items_find_by_id
@@ -31,14 +29,18 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal "Item Qui Esse", item_1.name
   end
 
-  def test_find_by_name
-    item_3 = @item_repository.find_by_name("Item Ea Voluptatum")
-    assert_equal "Item Ea Voluptatum", item_3.name
-    assert_equal 3, item_3.id
+  def test_items_find_by_name
+    item_1 = @item_repository.find_by_name("Item Ea Voluptatum")
+    assert_equal 3, item_1.id
+  end
+
+  def test_find_all_by_name
+    items = @item_repository.find_all_by_name("Item Ea Voluptatum")
+    assert_equal 1, items.size
   end
 
   def test_items_find_by_unit_price
-    item = @item_repository.find_by_unit_price("$751.07")
+    item = @item_repository.find_by_unit_price BigDecimal.new("751.07")
     assert_equal 1, item.id
   end
 
@@ -48,6 +50,4 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal description, item_7.description
     assert_equal 7, item_7.id
   end
-
-
 end

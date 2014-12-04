@@ -40,7 +40,11 @@ class InvoiceItemRepository
   end
 
   def find_item_by(item_id)
-    engine.invoice_item(item_id)
+    engine.invoice_find_item(item_id)
+  end
+
+  def find_invoice_by(invoice_id)
+    engine.invoice_by(invoice_id)
   end
 
   def find_all_by_item(id)
@@ -52,6 +56,12 @@ class InvoiceItemRepository
   def find_all_by_invoice(id)
     invoice_items.find_all do |invoice_item|
       invoice_item.invoice_id == id
+    end
+  end
+
+  def find_all_by_item(id)
+    invoice_items.find_all do |invoice_item|
+      invoice_item.item_id == id
     end
   end
 

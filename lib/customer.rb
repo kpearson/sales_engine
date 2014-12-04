@@ -21,6 +21,16 @@ class Customer
   end
 
   def transactions
-    invoices.find_all { |invoice| invoice.transactions}
+    invoices.select { |invoice| invoice.transactions}
+  end
+
+  def successful_transactions
+    transactions.select { |transaction| transaction.successful_transaction?}
+  end
+
+  def favorite_merchant
+    t = successful_transactions.map { |transaction| transaction.merchant_id }
+    x = t.map.max { |n| t.count(n) }
+    repository.engine.merchant_repository.find_by_id(x)
   end
 end

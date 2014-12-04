@@ -45,8 +45,14 @@ class InvoicesRepository
     end
   end
 
-  def find_by_status(status)
+  def find_all_by_status(status)
     invoices.find_all do |invoice|
+      invoice.status == status
+    end
+  end
+
+  def find_by_status(status)
+    invoices.find do |invoice|
       invoice.status == status
     end
   end

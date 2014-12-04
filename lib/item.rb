@@ -1,5 +1,4 @@
 class Item
-  # include DateHandler
   attr_reader :id,
               :name,
               :description,
@@ -21,6 +20,20 @@ class Item
 
   def price_converter(unit_price)
     price = BigDecimal.new(unit_price)/100
-    sprintf( "$%.02f" , price )
+    # sprintf( "$%.02f" , price )
   end
+
+  def invoice_items
+    @repository.find_invoice_items(id)
+  end
+
+  def merchant
+    @repository.find_merchant(merchant_id)
+  end
+
+  # def revenue
+  #   successful_invoice_items.inject(0) do |sum,invoice_item|
+  #     sum + invoice_item.item_revenue
+  #   end
+  # end
 end

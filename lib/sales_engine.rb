@@ -1,4 +1,5 @@
 require 'bigdecimal'
+require 'date'
 require_relative 'data'
 # require_relative 'date_handler'
 require_relative 'item_repository'
@@ -63,7 +64,15 @@ class SalesEngine
     invoice_item_repository.find_all_by_invoice(invoice_id)
   end
 
-  def invoice_item(item_id)
+  def invoice_items_belonging_to_item(item_id)
+    invoice_item_repository.find_all_by_item(item_id)
+  end
+
+  def merchants(merchant_id)
+    merchant_repository.find_by_id(merchant_id)
+  end
+
+  def invoice_find_item(item_id)
     item_repository.find_by_id(item_id)
   end
 

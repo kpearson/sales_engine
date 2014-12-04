@@ -14,7 +14,7 @@ class CustomerRepositoryTest < Minitest::Test
   end
 
   def test_customers_all
-    assert_equal 15, @customer_repository.all.count
+    assert_equal 204, @customer_repository.all.count
   end
 
   def test_customers_random
